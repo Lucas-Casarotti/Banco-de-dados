@@ -1,0 +1,13 @@
+
+
+-- BUSCANDO AS COLUNAS DA TABELA CLIENTE E ORDENANDO PELO NOME
+
+-- ASC É CRESCENTE
+-- DESC É DECRESCENTE 
+SELECT NM_Cliente, Endereco, Telefone, CPF_CNPJ_Cliente 
+FROM dbo.Clientes
+ORDER BY  NM_Cliente ASC;
+
+
+
+

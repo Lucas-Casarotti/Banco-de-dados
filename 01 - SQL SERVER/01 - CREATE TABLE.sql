@@ -51,11 +51,11 @@ GO
 CREATE TABLE dbo.Vendas (
    ID_Venda           Integer Primary key identity(1,1) NOT NULL
   ,DT_Venda           Date 
-  ,ID_Status_Venda    Integer Foreign key references dbo.Status_Venda  (ID_Status_Venda)   NOT NULL
-  ,ID_Cliente         Integer Foreign key references dbo.Clientes      (ID_Cliente)   NOT NULL
+  ,ID_Status_Venda    Integer Foreign key references dbo.Status_Venda  (ID_Status_Venda)  NOT NULL
+  ,ID_Cliente         Integer Foreign key references dbo.Clientes      (ID_Cliente)       NOT NULL
   ,ID_Funcionario     Integer Foreign key references dbo.Funcionarios  (ID_Funcionario)   NOT NULL
-  ,ID_Produto         Integer Foreign key references dbo.Produtos      (ID_Produto)   NOT NULL
-  ,ID_Pagamento       Integer Foreign key references dbo.Pagamentos    (ID_Pagamento) NOT NULL
+  ,ID_Produto         Integer Foreign key references dbo.Produtos      (ID_Produto)       NOT NULL
+  ,ID_Pagamento       Integer Foreign key references dbo.Pagamentos    (ID_Pagamento)     NOT NULL
 );
 
 CREATE TABLE dbo.Vendas_Finalizadas (
