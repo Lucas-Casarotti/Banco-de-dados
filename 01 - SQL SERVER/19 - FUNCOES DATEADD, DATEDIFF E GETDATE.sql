@@ -1,0 +1,41 @@
+
+-- DATEADD, DATEDIFF E GETDATE
+
+-- DATEADD = UTILIZADO PARA ADICIONAR OU SUBTRAIR DIAS, MESES OU ANOS DE UMA DATA ESPECIFICA
+SELECT DT_Admissao
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+SELECT DATEADD(DAY, 1, DT_Admissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+SELECT DATEADD(MONTH, 1, DT_Admissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+SELECT DATEADD(YEAR, 1, DT_Admissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+
+-- DATEDIFF = UTILIZADO PARA PEGAR O INTERVALO DE DIAS, MESES OU ANOS ENTRE AS DUAS DATAS
+SELECT DT_Admissao
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+SELECT DATEDIFF(DAY, DT_Admissao, DT_Demissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1 
+
+SELECT DATEDIFF(MONTH, DT_Admissao, DT_Demissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1
+
+SELECT DATEDIFF(YEAR, DT_Admissao, DT_Demissao)
+FROM Funcionarios
+WHERE ID_Funcionario = 1
+
+-- GETDATE = UTILIZADO PARA PEGAR O DATA ATUAL
+
+SELECT GETDATE()

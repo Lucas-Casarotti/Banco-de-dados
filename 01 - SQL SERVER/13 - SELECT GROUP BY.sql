@@ -1,0 +1,14 @@
+
+
+-- BUSCANDO OS CLIENTES COM NM_CLIENTE = 'LUCAS CASAROTTI' E AGRUPANDO EM UMA ÚNICA LINHA
+SELECT NM_Pessoa
+FROM dbo.Pessoas
+GROUP BY NM_Pessoa;
+
+SELECT NM_Pessoa
+FROM dbo.Pessoas
+WHERE NM_Pessoa = 'Lucas Casarotti'
+GROUP BY NM_Pessoa;
+
+
+
