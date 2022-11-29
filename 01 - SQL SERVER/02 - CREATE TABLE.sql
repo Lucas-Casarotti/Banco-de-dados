@@ -1,3 +1,4 @@
+-- CRIANDO TABELAS
 CREATE TABLE dbo.Pessoas(ID_Pessoa             Integer Identity(1,1)
                         ,NM_Pessoa             Varchar(200) NOT NULL 
                         ,CD_Inscricao_Nacional Varchar(14)  UNIQUE

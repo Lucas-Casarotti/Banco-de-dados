@@ -1,3 +1,4 @@
+-- INSERINDO DADOS NAS TABELAS
 INSERT INTO dbo.Pessoas(NM_Pessoa, CD_Inscricao_Nacional, NO_Documento, NM_Orgao_Emissor, Sexo, DT_Nascimento)
 VALUES ('Lucas Casarotti', '465.341.224-22', '57.469.654-X', 'SSP', 'M', '31/05/1999') 
       ,('Teste02', '465.341.214-21', '57.469.624-X', 'SSP', 'M', '31/03/2022') 

@@ -1,4 +1,4 @@
-
+-- -- FILTRANDO COLUNAS AGRUPADAS
 SELECT COUNT(1)
       ,NM_Pessoa
 FROM dbo.Pessoas

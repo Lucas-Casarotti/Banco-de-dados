@@ -1,0 +1,25 @@
+
+-- ESTRUTURA DE CONDIÇÃO 
+-- QUANDO @SEXO = 'M' ENTÃO RETORNA 'MASCULINO'
+-- QUANDO @SEXO = 'F' ENTÃO RETORNA 'FEMININO'
+DECLARE @Sexo Char(1) = 'M'
+SELECT 
+    CASE @Sexo
+	  WHEN 'M' THEN 'MASCULINO'
+	  WHEN 'F' THEN 'FEMININO'
+	  ELSE 'NÃO INFORMADO'
+	END AS SEXO
+
+-- QUANDO @DT_Atual = DATA ATUAL ENTÃO RETORNA 'Sim' NA COLUNA ANIVERSARIANTE
+-- CASO CONTRÁRIO RETORNA 'Nao'
+DECLARE @DT_Atual Date = '2022-11-18'
+SELECT NM_Pessoa
+      ,CD_Inscricao_Nacional
+	  ,DT_Nascimento
+	  ,CASE DT_Nascimento
+	    WHEN @DT_Atual THEN 'Sim'
+		ELSE 'Não'
+	   END AS Aniversariante
+FROM dbo.Pessoas
+
+

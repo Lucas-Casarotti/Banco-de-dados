@@ -1,1 +1,2 @@
+-- EXCLUINDO UMA TABELA
 DROP TABLE dbo.Clientes
