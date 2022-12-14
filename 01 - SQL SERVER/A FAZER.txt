@@ -1,7 +1,0 @@
-https://www.youtube.com/watch?v=OKqpZ6zbZwQ&list=PL7iAT8C5wumpQWB8AFW7CwK2nlzh8ZdP9&index=1&ab_channel=AlessandroTrovato
-
-
-CREATE INDEX 
-
-CROSS APLY e OUTTER APLY
-
